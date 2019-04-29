@@ -2,9 +2,9 @@
 class Keto < Formula
   desc ""
   homepage "https://www.ory.sh"
-  url "https://github.com/ory/keto/releases/download/v0.3.0-sandbox/keto_0.3.0-sandbox_macOS_64-bit.tar.gz"
-  version "0.3.0-sandbox"
-  sha256 "e8f3fe79d3907296c8eebad09630b4b442e987c6e9b7d52590e1199abe5a78d3"
+  url "https://github.com/ory/keto/releases/download/v0.3.1-sandbox/keto_0.3.1-sandbox_macOS_64-bit.tar.gz"
+  version "0.3.1-sandbox"
+  sha256 "de182627b13fcbad6fe13979a7fe4f125b34322cdb4a7a73f086ce08d6e0bc75"
 
   def install
     bin.install "keto"
