@@ -2,9 +2,27 @@
 class Keto < Formula
   desc ""
   homepage "https://www.ory.sh"
-  url "https://github.com/ory/keto/releases/download/v0.3.3-sandbox/keto_0.3.3-sandbox_macOS_64-bit.tar.gz"
-  version "0.3.3-sandbox"
-  sha256 "691c1d79d5c60029bad1ce2995719e971afe96d88e9edbe8c0f00625def0ccfd"
+  version "0.3.6-sandbox"
+  bottle :unneeded
+
+  if OS.mac?
+    url "https://github.com/ory/keto/releases/download/v0.3.6-sandbox/keto_0.3.6-sandbox_macOS_64-bit.tar.gz"
+    sha256 "f0bbb8187bc407ba5e82853c41ecad3a5a5e193320d26f2ef8a5425e53345745"
+  elsif OS.linux?
+    if Hardware::CPU.intel?
+      url "https://github.com/ory/keto/releases/download/v0.3.6-sandbox/keto_0.3.6-sandbox_Linux_64-bit.tar.gz"
+      sha256 "383ce066c29ab09e77df21f5dc992d87c9b1a9435b8e0aef70ea55267f38f469"
+    end
+    if Hardware::CPU.arm?
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/ory/keto/releases/download/v0.3.6-sandbox/keto_0.3.6-sandbox_Linux_arm64.tar.gz"
+        sha256 "76a1e206469fdda2e4d03ad08fa066b7179abffb50e58593317adad925e0f88d"
+      else
+        url "https://github.com/ory/keto/releases/download/v0.3.6-sandbox/keto_0.3.6-sandbox_Linux_armv6.tar.gz"
+        sha256 "e0087d22f3498a94a00d2ea7ac4241c7d4e387004401d9e77fc867acb0ee8190"
+      end
+    end
+  end
 
   def install
     bin.install "keto"
