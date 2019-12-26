@@ -2,24 +2,24 @@
 class Keto < Formula
   desc ""
   homepage "https://www.ory.sh"
-  version "0.3.8-sandbox"
+  version "0.3.10-sandbox"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/ory/keto/releases/download/v0.3.8-sandbox/keto_0.3.8-sandbox_macOS_64-bit.tar.gz"
-    sha256 "2088388432ff9e1fa8191b6034aa99785c39da1e7f9548b445a31ac5083646e1"
+    url "https://github.com/ory/keto/releases/download/v0.3.10-sandbox/keto_0.3.10-sandbox_macOS_64-bit.tar.gz"
+    sha256 "f5ab70f6f9b531fcded0e9f6bde487b5f02ea3bf0015efe441d17ccf54946bea"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/ory/keto/releases/download/v0.3.8-sandbox/keto_0.3.8-sandbox_Linux_64-bit.tar.gz"
-      sha256 "048dead68ee93eb98765af937996dd07e427f793c072a7f4e97a1c0dc10f1a70"
+      url "https://github.com/ory/keto/releases/download/v0.3.10-sandbox/keto_0.3.10-sandbox_Linux_64-bit.tar.gz"
+      sha256 "8f73b49b44401533acd828c20852343fe07c3a43bf4d4d57ab0c1d8920ece8a5"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ory/keto/releases/download/v0.3.8-sandbox/keto_0.3.8-sandbox_Linux_arm64.tar.gz"
-        sha256 "a5d8f4e2678b5bb3a2d2a4dce97254544023ee9a6b600e9b3f916c84be5a91d0"
+        url "https://github.com/ory/keto/releases/download/v0.3.10-sandbox/keto_0.3.10-sandbox_Linux_arm64.tar.gz"
+        sha256 "62c969beb2497fed6b868afdd12a099f761ccf546ccb5783ee5a27616b74065a"
       else
-        url "https://github.com/ory/keto/releases/download/v0.3.8-sandbox/keto_0.3.8-sandbox_Linux_armv6.tar.gz"
-        sha256 "69e3e5eeddb712bd2e11c1c673605f373195e3ed9398e85dbcdd699e9157d23b"
+        url "https://github.com/ory/keto/releases/download/v0.3.10-sandbox/keto_0.3.10-sandbox_Linux_armv6.tar.gz"
+        sha256 "7faa2e485fd46a019256e9f62d5ca9d1ec417c25ac697821f59a100b91da205f"
       end
     end
   end
