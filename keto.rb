@@ -2,24 +2,24 @@
 class Keto < Formula
   desc ""
   homepage "https://www.ory.sh"
-  version "0.4.3-alpha.1"
+  version "0.4.3-alpha.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/ory/keto/releases/download/v0.4.3-alpha.1/keto_0.4.3-alpha.1_macOS_64-bit.tar.gz"
-    sha256 "f7cb8aa53bff12f03a346e8bfa0328426975d4041c7fc651ccf6f2f8c8287b8f"
+    url "https://github.com/ory/keto/releases/download/v0.4.3-alpha.2/keto_0.4.3-alpha.2_macOS_64-bit.tar.gz"
+    sha256 "09116a1338707df373ca0dafa9ae5854b25a61e20f15094aaa8bcf4f31c4ee80"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/ory/keto/releases/download/v0.4.3-alpha.1/keto_0.4.3-alpha.1_Linux_64-bit.tar.gz"
-      sha256 "74bb9352515d00195240d429c4189cf261a14865117d64c4250a040d14fa8657"
+      url "https://github.com/ory/keto/releases/download/v0.4.3-alpha.2/keto_0.4.3-alpha.2_Linux_64-bit.tar.gz"
+      sha256 "4f2724926298ac3b6d2e678eb8fe6e091f36f4456024980d8685f755c843c085"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ory/keto/releases/download/v0.4.3-alpha.1/keto_0.4.3-alpha.1_Linux_arm64.tar.gz"
-        sha256 "5a3d3664e47f7a54f1fe05ce6d1cfebfeac9380a253afc23574daac3cdcb7399"
+        url "https://github.com/ory/keto/releases/download/v0.4.3-alpha.2/keto_0.4.3-alpha.2_Linux_arm64.tar.gz"
+        sha256 "c681b62b8a98401485bc177c089367ebe3089d97c524e35a7fbe02c88c951f64"
       else
-        url "https://github.com/ory/keto/releases/download/v0.4.3-alpha.1/keto_0.4.3-alpha.1_Linux_armv6.tar.gz"
-        sha256 "3fc8caf6433389d1f4eb5bf40297e1d1ee6c979992993302fce1d102ff0a2cb3"
+        url "https://github.com/ory/keto/releases/download/v0.4.3-alpha.2/keto_0.4.3-alpha.2_Linux_armv6.tar.gz"
+        sha256 "0bb9a22d1725db592ddc3ca70a36b394c559bc5013b4c288ae7038a68a877bad"
       end
     end
   end
