@@ -5,16 +5,16 @@
 class Keto < Formula
   desc ""
   homepage "https://www.ory.sh"
-  version "0.6.0-alpha.1.pre.7"
+  version "0.6.0-alpha.1"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/ory/keto/releases/download/v0.6.0-alpha.1.pre.7/keto_0.6.0-alpha.1.pre.7-sqlite_macos_64bit.tar.gz"
-    sha256 "936f4f428a28506b4607947cb4e97ff482023f1ec2335fa96e7d43b09e55562d"
+    url "https://github.com/ory/keto/releases/download/v0.6.0-alpha.1/keto_0.6.0-alpha.1-sqlite_macos_64bit.tar.gz"
+    sha256 "fabf860d4a035055fa3695dd5e94948934aafa7e94669f85e8a1cf3607e92c38"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/ory/keto/releases/download/v0.6.0-alpha.1.pre.7/keto_0.6.0-alpha.1.pre.7-sqlite_linux_64bit.tar.gz"
-    sha256 "9f60998baab464f0f569ef23e5e539682371b190538914ec76c1b9625aef2581"
+    url "https://github.com/ory/keto/releases/download/v0.6.0-alpha.1/keto_0.6.0-alpha.1-sqlite_linux_64bit.tar.gz"
+    sha256 "a921810f417bd94e0a20a7dc7928bc147eb194fd69884dbca1afd2c7f564483d"
   end
 
   def install
