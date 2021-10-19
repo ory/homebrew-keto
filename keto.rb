@@ -5,24 +5,24 @@
 class Keto < Formula
   desc ""
   homepage "https://www.ory.sh"
-  version "0.7.0-alpha.0"
+  version "0.7.0-alpha.1"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ory/keto/releases/download/v0.7.0-alpha.0/keto_0.7.0-alpha.0-sqlite_macos_64bit.tar.gz"
-      sha256 "a3a3750499401a8259d977e25bbfa8e004163c91da0ea243e1004f23f4ea029f"
+      url "https://github.com/ory/keto/releases/download/v0.7.0-alpha.1/keto_0.7.0-alpha.1-sqlite_macos_64bit.tar.gz"
+      sha256 "baa21bd3568a7cd8165c434e731891b276d7da9efcbbf63ebfa4f8ac21fcb4e7"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ory/keto/releases/download/v0.7.0-alpha.0/keto_0.7.0-alpha.0-sqlite_macos_arm64.tar.gz"
-      sha256 "0e4f6d8a48a7f9813bcf83ebf5fc2b3b7a80e815ff3efe0701964441dcae4245"
+      url "https://github.com/ory/keto/releases/download/v0.7.0-alpha.1/keto_0.7.0-alpha.1-sqlite_macos_arm64.tar.gz"
+      sha256 "a19ead8d4119fab4a3b1edc71459b34c19819db9da2c97f990299166f15178e8"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ory/keto/releases/download/v0.7.0-alpha.0/keto_0.7.0-alpha.0-sqlite_linux_64bit.tar.gz"
-      sha256 "0d061360f8e1e4c65e0f130c055e5bb0c8104b9aae4742d383ba741e4d784cba"
+      url "https://github.com/ory/keto/releases/download/v0.7.0-alpha.1/keto_0.7.0-alpha.1-sqlite_linux_64bit.tar.gz"
+      sha256 "28b8c26f510ebe6ce42e0b072081fe08688e17b3ae8102767d86164910917f47"
     end
   end
 
